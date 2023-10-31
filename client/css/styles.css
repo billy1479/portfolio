@@ -601,6 +601,7 @@ progress {
 .img-fluid {
   max-width: 100%;
   height: auto;
+  max-height: 300px;
 }
 
 .img-thumbnail {
@@ -11002,6 +11003,7 @@ html {
   max-width: 25rem;
   border-radius: 0.5rem;
   overflow: hidden;
+  text-align: center;
 }
 .portfolio .portfolio-item .portfolio-item-caption {
   position: absolute;
