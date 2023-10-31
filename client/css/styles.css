@@ -11063,3 +11063,38 @@ html {
   background-color: #17a98c;
   padding: 20px;
 }
+
+/* For slideshow */
+
+.slideshow-container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Style for individual slides */
+.slide {
+  display: none;
+}
+
+/* Style for navigation buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-size: 24px;
+  user-select: none;
+}
+
+/* Position the navigation buttons */
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
