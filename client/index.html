@@ -348,7 +348,7 @@
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <a class="text-secondary" href="https://github.com/studentHouse/MoveInApp">View GitHub Repository</p>
+                                    <a class="text-secondary" href="https://github.com/studentHouse/MoveInApp">View GitHub Repository</a>
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
                                     </div>
@@ -357,22 +357,25 @@
                                     <!-- Portfolio Modal - Text-->
 
                                     <!-- Slideshow -->
-                                    <div class="slideshow-box">
+                                    <!-- <div class="slideshow-box"> -->
                                         <div class="slideshow-container">
-                                            <div class="slide fade">
+                                            <div class="slide fade pslide1">
                                                 <img src="assets/img/arden.png" alt="Picture 1">
                                             </div>
-                                            <div class="slide fade">
-                                                <img src="assets/img/arden.png" alt="Picture 2">
+                                            <div class="slide fade pslide1">
+                                                <img src="assets/img/chippy.png" alt="Picture 2">
                                             </div>
-                                            <div class="slide fade">
-                                                <img src="assets/img/arden.png" alt="Picture 3">
+                                            <div class="slide fade pslide1">
+                                                <img src="assets/img/SDLPPimage.png" alt="Picture 3">
                                             </div>
                                         </div>
                                         <div class="slideNavigation">
-                                            <a class="prev" onclick="">&#10094;</a>
-                                            <a class="next" onclick="">&#10095;</a>
+                                            <a class="prev" onclick="changeSlide(-1, 'p1')">&#10094;</a>
+                                            <a class="next" onclick="changeSlide(1, 'p1')">&#10095;</a>
                                         </div>
+                                    <!-- </div> -->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
                                     </div>
 
                                     <p class="mb-4">Description goes here</p>
@@ -686,6 +689,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script src="js/customScripts.js"></script>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->

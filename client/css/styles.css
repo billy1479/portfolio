@@ -600,8 +600,8 @@ progress {
 
 .img-fluid {
   max-width: 100%;
-  height: auto;
-  max-height: 300px;
+  height: 300px;
+  /* max-height: 300px; */
 }
 
 .img-thumbnail {
@@ -11085,7 +11085,7 @@ html {
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: white;
+  color: black;
   font-size: 24px;
   user-select: none;
 }
