@@ -11098,3 +11098,8 @@ html {
 .next {
   right: 0;
 }
+
+.slideImage {
+  width: 70%;
+  height: auto;
+}

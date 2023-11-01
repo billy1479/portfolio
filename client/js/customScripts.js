@@ -22,30 +22,34 @@ function showSlide(x,type) {
     let slides = document.getElementsByClassName(area)
     if (x >= slides.length) {
         slideDict[type][1] = 0
-    }
-    if (x < 0) {
+        x = slideDict[type][1]
+    } else if (x < 0) {
         slideDict[type][1] = slides.length - 1
         x = slideDict[type][1]
+    } else {
+        slideDict[type][1] = x
     }
     for (i=0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
+    console.log("New image index is - " + x)
     slides[x].style.display = 'Block'
     slides[x].style.opacity = '1'
 }
 
 function changeSlide(x, type) {
     let index = slideDict[type][1]
+    console.log("Current image index is " + index)
     showSlide(index += x, type)
 }
 
 function load() {
     showSlide(pslide1, "p1")
-    // showSlide(pslide2)
-    // showSlide(pslide3)
-    // showSlide(pslide4)
-    // showSlide(pslide5)
-    // showSlide(pslide6)
+    showSlide(pslide2, 'p2')
+    showSlide(pslide3, 'p3')
+    showSlide(pslide4, 'p4')
+    showSlide(pslide5, 'p5')
+    showSlide(pslide6, 'p6')
 }
 
 document.addEventListener('DOMContentLoaded', load)
