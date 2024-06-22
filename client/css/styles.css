@@ -11103,3 +11103,7 @@ html {
 .slideImage {
   width: -webkit-fill-available;
 }
+
+#profilepicture {
+  border-radius: 50%;
+}
